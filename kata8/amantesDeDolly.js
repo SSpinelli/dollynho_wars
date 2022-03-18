@@ -7,8 +7,6 @@
     dois pares ou dois impares ---> 'Isso vai dar ruim, tem certeza que quer continuar?' 
 */
 
-function trueLove(num1, num2) {
-  //Sua solução vai aqui!
-}
+const trueLove = (num1, num2) => num2 % 2 !== num1 % 2 ? 'Vocês vão ser felizes para sempre' : 'Isso vai dar ruim, tem certeza que quer continuar?';
 
 module.exports = trueLove;
