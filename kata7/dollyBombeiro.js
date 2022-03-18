@@ -12,10 +12,18 @@
   "xxYxx" e w = 1 ---> 4 DollyBombs!
   "xxxxYxYx" e w = 5 ---> 3 DollyBombs!
   "xxxxxYxYx" e w = 2 ---> 5 DollyBombs! 
+
 */
 
 function dollyBombs(fire, w) {
-  // Sua solução vai aqui!
+  const arrLetter = fire.split('Y');
+  let result = 0;
+  for (let index = 0; index < arrLetter.length; index += 1) {
+    if(arrLetter[index].length != 0 ){
+      result += Math.ceil(arrLetter[index].length / w);
+    }
+  }
+  return result;
 }
 
 module.exports = dollyBombs;

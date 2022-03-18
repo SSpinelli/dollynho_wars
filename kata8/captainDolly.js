@@ -12,7 +12,7 @@
     Se todas as respostas forem 'aye' então 'Atire!' se uma ou mais forem 'nay' então 'Tragam-me polvora'.
 */
 
-const cannonReady = (gunners) => Object.values(gunners).every(el => el === 'aye')? 'Atire!' : 'Tragam-me polvora!';
+const cannonReady = (gunners) => Object.values(gunners).every(el => el === 'aye') ? 'Atire!' : 'Tragam-me polvora!';
 
 
 
