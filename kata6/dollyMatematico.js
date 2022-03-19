@@ -12,8 +12,13 @@
     493193 ---> 4 + 9 + 3 + 1 + 9 + 3 = 29 ---> 2 + 9 = 11 ---> 1 + 1 = 2
 */
 
-function digitalRoot(n) {
-  //Sua solução aqui!
+const digitalRoot = (n) => {
+ const splitNum = n.toString().split('');
+  const result = splitNum.reduce((acc, curr) => {
+    acc += parseInt(curr)
+    return acc
+  }, 0);
+  return result > 9 ? digitalRoot(result) : result;
 }
 
 module.exports = digitalRoot;
